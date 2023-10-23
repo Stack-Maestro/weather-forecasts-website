@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="icons/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>https://StackMaestro_weather_forecast</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <video autoplay muted loop class="vik">
+            <source src="video/clouds-4753.mp4" type="video/mp4"  >
+        </video>
+        </div>
+        <div >
+            <marquee class="move" behavior="" direction="">
+                <span class="dew">
+                    List Of Countries   :   
+                </span>
+                Afghanistan,
+                Albania,
+                Algeria,
+                Andorra,
+                Angola,
+                Antigua and Barbuda,
+                Argentina,
+                Armenia,
+                Australia,
+                Austria,
+                Azerbaijan,
+                Bahamas
+                Bahrain,
+                Bangladesh,
+                Barbados,
+                Belarus,
+                Belgium,
+                Belize,
+                Benin,
+                Bhutan,
+                Bolivia,
+                Bosnia and Herzegovina,
+                Botswana,
+                Brazil,
+                Brunei,
+                Bulgaria,
+                Burkina Faso,
+                Burundi,
+                Cabo Verde,
+                Cambodia,
+                Cameroon,
+                Canada,
+                Central African Republic,
+                Chad,
+                Chile,
+                China,
+                Colombia,
+                Comoros,
+                Congo, Democratic Republic of the,
+                Congo, Republic of the,
+                Costa Rica,
+                Cote d'Ivoire,
+                Croatia,
+                Cuba,
+                Cyprus,
+                Czechia,
+                Denmark,
+                Djibouti,
+                Dominica,
+                Dominican Republic,
+                Ecuador,
+                Egypt,
+                El Salvador,
+                Equatorial Guinea,
+                Eritrea,
+                Estonia,
+                Eswatini,
+                Ethiopia,
+                Fiji,
+                Finland,
+                France,
+                Gabon,
+                Gambia,
+                Georgia,
+                Germany,
+                Ghana,
+                Greece,
+                Grenada,
+                Guatemala,
+                Guinea,
+                Guinea-Bissau,
+                Guyana,
+                Haiti,
+                Honduras,
+                Hungary,
+                Iceland,
+                India,
+                Indonesia,
+                Iran,
+                Iraq,
+                Ireland,
+                Israel,
+                Italy,
+                Jamaica,
+                Japan,
+                Jordan,
+                Kazakhstan,
+                Kenya,
+                Kiribati,
+                Kosovo,
+                Kuwait,
+                Kyrgyzstan,
+                Laos,
+                Latvia,
+                Lebanon,
+                Lesotho,
+                Liberia,
+                Libya,
+                Liechtenstein,
+                Lithuania,
+                Luxembourg,
+                Madagascar,
+                    Malawi,
+                    Malaysia,
+                    Maldives,
+                    Mali,
+                    Malta,
+                    Marshall Islands,
+                    Mauritania,
+                    Mauritius,
+                    Mexico,
+                    Micronesia,
+                    Moldova,
+                    Monaco,
+                    Mongolia,
+                    Montenegro,
+                    Morocco,
+                    Mozambique,
+                    Myanmar,
+                    Namibia,
+                    Nauru,
+                    Nepal,
+                    Netherlands,
+                    New Zealand,
+                    Nicaragua,
+                    Niger,
+                    Nigeria,
+                    North Korea,
+                    North Macedonia,
+                    Norway,
+                    Oman,
+                    Pakistan,
+                    Palau,
+                    Palestine,
+                    Panama,
+                    Papua New Guinea,
+                    Paraguay,
+                    Peru,
+                    Philippines,
+                    Poland,
+                    Portugal,
+                    Qatar'
+                    Romania,
+                    Russia,
+                    Rwanda,
+                    Saint Kitts and Nevis,
+                        Saint Lucia,
+                        Saint Vincent and the Grenadines,
+                        Samoa,
+                        San Marino,
+                        Sao Tome and Principe,
+                        Saudi Arabia,
+                        Senegal,
+                        Serbia,
+                        Seychelles,
+                        Sierra Leone,
+                        Singapore,
+                        Slovakia,
+                        Slovenia,
+                        Solomon Islands,
+                        Somalia,
+                        South Africa,
+                        South Korea,
+                        South Sudan,
+                        Spain,
+                        Sri Lanka,
+                        Sudan,
+                        Suriname,
+                        Sweden,
+                        Switzerland,
+                        Syria,
+                        Taiwan,
+                        Tajikistan,
+                        Tanzania,
+                        Thailand,
+                        Timor-Leste,
+                        Togo,
+                        Tonga,
+                        Trinidad and Tobago,
+                        Tunisia,
+                        Turkey,
+                        Turkmenistan,
+                        Tuvalu,
+                        Uganda,
+                        Ukraine,
+                        United Arab Emirates (UAE),
+                        United Kingdom (UK),
+                        United States of America (USA),
+                        Uruguay,
+                        Uzbekistan,
+                        Vanuatu,
+                        Vatican City (Holy See),
+                        Venezuela,
+                        Vietnam,
+                        Yemen,
+                        Zambia,
+                        Zimbabwe.
+            </marquee>
+        </div>
+
+        <section>
+            <div class="word">
+                <section class="border">
+
+                    <div>
+                        <h1 class="white">WEATHER <span class="red"><i>FORECAST </i></span></h1>
+                    </div>
+                    <hr>
+                    <div class="header">
+                        <h2 >Please Enter Your Country :</h2>
+
+                    </div>
+                    <div class="out">
+                    <input type="text" id="input_user">
+                    <button onclick="display()" id="search">Search</button>
+                    </div>
+                    <div>
+                        <h2 id="instruct" style="color: red;"></h2>
+                    </div>
+
+                    <section class="datas">
+                        
+                        <div  class="temperture">
+
+                            <h2 id="temperature"> </h2>
+
+                        </div>
+
+                        <div class="wind">
+                            <h2 id="wind"></h2>
+
+                        </div>
+                        <div class="description">
+
+                            <h2 id="description"></h2>
+
+                        </div>
+
+                        <div class="day1">
+                            <h2 id="day1"></h2>
+                            <dl id="temperature1"> </dl>
+                            <dl id="wind1"></dl>
+
+                        </div>
+
+                        <div class="day2">
+                            <h2 id="day2"> </h2>
+                            <dl id="temperature2"></dl>
+                            <dl id="wind2"> </dl>
+
+                        </div>
+                        <div class="day3">
+                            <h2 id="day3"></h2>
+                            <dl id="temperature3"></dl>
+                            <dl id="wind3"></dl>
+
+                        </div>
+
+                    </section>
+
+                    
+                <footer>
+                    <h4><i>Design by StackMaestro</i></h4>
+                    <i>Click on the Github Icon to access StackMaestro works</i>
+                    <a href="https://github.com/Stack-Maestro" target="_blank"><i class="fab fa-github" style="font-size: 40px; color:whitesmoke"></i></a>
+
+                </footer>
+
+
+                </section>
+
+            </div>
+            
+        </section>
+
+
+
+
+        <script>
+
+          function display() {
+            let user_input= document.getElementById('input_user').value
+
+              //Weather forecast
+                 fetch('https://goweather.herokuapp.com/weather/'+ user_input)
+              .then(res => res.json())
+              .then(json => {
+
+                console.log(json)
+                let temperature = json.temperature
+                console.log(temperature)
+                let wind = json.wind
+                console.log(wind)
+                let description= json.description
+                console.log(description)
+                let forecast1d= json.forecast[0].day
+                let forecast1t= json.forecast[0].temperature
+                let forecast1w= json.forecast[0].wind
+                console.log(forecast1d)
+                console.log(forecast1d)
+                console.log(forecast1w)
+                let forecast2d= json.forecast[1].day
+                let forecast2t= json.forecast[1].temperature
+                let forecast2w= json.forecast[1].wind
+
+                console.log(forecast2d)
+                console.log(forecast2t)
+                console.log(forecast2w)
+
+                let forecast3d=json.forecast[2].day
+                let forecast3t=json.forecast[2].temperature
+                let forecast3w=json.forecast[2].wind
+                
+                console.log(forecast2d)
+                console.log(forecast2t)
+                console.log(forecast2w)
+
+
+
+
+                document.getElementById('temperature').innerHTML="TEMPRATURE: " + " " + temperature;
+                document.getElementById('wind').innerHTML="WIND: " + " " + wind;
+                document.getElementById('description').innerHTML="DESCRIPTION: " + " " + description;
+                document.getElementById('day1').innerHTML="DAY : " + " " + forecast1d;
+                document.getElementById('temperature1').innerHTML="\t Temperature : " + " " + forecast1t;
+                document.getElementById('wind1').innerHTML="\t WIND : " + " " + forecast1w;
+
+                document.getElementById('day2').innerHTML="DAY : " + " " + forecast2d;
+                document.getElementById('temperature2').innerHTML="\t Temperature : " + " " + forecast2t;
+                document.getElementById('wind2').innerHTML="\t WIND : " + " " + forecast2w;
+
+                document.getElementById('day3').innerHTML="DAY : " + " " + forecast3d;
+                document.getElementById('temperature3').innerHTML="\t Temperature : " + " " + forecast3t;
+                document.getElementById('wind3').innerHTML="\t WIND : " + " " + forecast3w;
+
+
+               
+              })
+              if (user_input==""){
+                document.querySelector('#instruct').innerHTML=" INVALID!!!!!! Please Enter A Country"
+                //window.alert("INVALID!!!!!! Please Enter A Country")
+            }
+            else{
+                document.querySelector('#instruct').innerHTML=" "
+
+
+            }
+        
+          }
+
+        </script>
+
+    
+</body>
+</html>
